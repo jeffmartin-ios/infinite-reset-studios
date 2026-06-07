@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Submissions — Infinite Reset Studios</title>
+  <meta name="description" content="Get in touch with Infinite Reset Studios. Learn how to submit zine outlines, order distribution batches, or collaborate on digital travel utilities.">
+  
+  <!-- SEO & Favicon -->
+  <link rel="canonical" href="https://jeff.github.io/infiniteresetslabs/contact.html">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Navigation Header -->
+    <header id="site-header">
+      <a href="index.html" class="logo" id="logo-link">Infinite Reset Studios</a>
+      <nav id="main-navigation">
+        <a href="about.html" id="nav-about" data-i18n="nav_about"><span>01</span>Philosophy</a>
+        <a href="projects.html" id="nav-projects" data-i18n="nav_projects"><span>02</span>Projects</a>
+        <a href="contact.html" id="nav-contact" data-i18n="nav_contact"><span>03</span>Contact</a>
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <span class="divider">/</span>
+          <button class="lang-btn" data-lang="ja">JA</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      
+      <div class="contact-layout" id="contact-page-layout">
+        
+        <!-- Contact Information -->
+        <section class="contact-info" id="contact-information">
+          <span class="subtitle-japanese" id="contact-japanese-label" data-i18n="contact_subtitle">連絡先 // CONNECT</span>
+          <h2 id="contact-main-heading" data-i18n="contact_heading">Collaborations & Inquiries</h2>
+          <p id="contact-intro-p" data-i18n="contact_desc">
+            We are always interested in collaborating with photographers, writers, cartographers, iOS/Android developers, and local guides. Whether you have a project proposal, distribution inquiry, or just want to discuss slow travel, reach out to us.
+          </p>
+          
+          <!-- Commented out emails
+          <ul class="contact-methods" id="contact-links-list">
+            <li id="contact-email-general">
+              <span data-i18n="contact_label_general">General Inquiries / </span>
+              <a href="mailto:hello@infiniteresetstudios.com" id="email-general-link">hello@infiniteresetstudios.com</a>
+            </li>
+            <li id="contact-email-editorial">
+              <span data-i18n="contact_label_submissions">Zine Submissions / </span>
+              <a href="mailto:submissions@infiniteresetstudios.com" id="email-submissions-link">submissions@infiniteresetstudios.com</a>
+            </li>
+            <li id="contact-email-press">
+              <span data-i18n="contact_label_press">Press & Stockists / </span>
+              <a href="mailto:stockists@infiniteresetstudios.com" id="email-stockists-link">stockists@infiniteresetstudios.com</a>
+            </li>
+          </ul>
+          -->
+          <p id="contact-coming-soon" class="coming-soon-text" data-i18n="contact_coming_soon">Coming soon...</p>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form-section" id="contact-form-block">
+          <form class="contact-form" id="inquiry-form" novalidate>
+            
+            <div class="form-group" id="group-name">
+              <label for="name-input" data-i18n="form_label_name">Your Name</label>
+              <input type="text" id="name-input" placeholder="e.g. Kenji Sato" required autocomplete="name" data-i18n="form_placeholder_name">
+            </div>
+
+            <div class="form-group" id="group-email">
+              <label for="email-input" data-i18n="form_label_email">Email Address</label>
+              <input type="email" id="email-input" placeholder="e.g. kenji@example.com" required autocomplete="email" data-i18n="form_placeholder_email">
+            </div>
+
+            <div class="form-group" id="group-message">
+              <label for="message-input" data-i18n="form_label_message">Message / Pitch Abstract</label>
+              <textarea id="message-input" placeholder="Outline your project, location focus, or distribution inquiry here..." required data-i18n="form_placeholder_message"></textarea>
+            </div>
+
+            <!-- Terminal status response -->
+            <div class="form-status" id="form-status-feedback" aria-live="polite"></div>
+
+            <button type="submit" class="form-btn" id="submit-inquiry-btn" data-i18n="form_btn_submit">Transmit Message</button>
+          </form>
+        </section>
+
+      </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="site-footer">
+      <div class="footer-left" id="footer-left-content">
+        <span id="copyright-text" data-i18n="footer_copyright">© 2026 Infinite Reset Studios</span>
+        <span id="location-text" data-i18n="footer_location">Fukuoka — Tokyo</span>
+      </div>
+      <div class="footer-right" id="footer-right-content">
+        <a href="https://instagram.com/placeholder" target="_blank" rel="noopener noreferrer" id="footer-instagram-link">Instagram</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="translations.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
