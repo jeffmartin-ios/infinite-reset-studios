@@ -8,6 +8,7 @@
   --color-text-muted: #9c9a96;     /* Muted grey */
   --color-border: #e6e3df;         /* Hairline layout border */
   --color-accent: #bc002d;         /* Crimson dot/focus */
+  --color-map-water: #eae5de;      /* Warm gray-beige for map water body */
   
   --font-sans: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: 'JetBrains Mono', SFMono-Regular, Consolas, Menlo, monospace;
@@ -161,6 +162,8 @@ nav a.active::after {
   }
   nav {
     width: 100%;
+    flex-wrap: wrap;
+    row-gap: 8px;
   }
   nav a {
     margin-left: 0;
@@ -277,6 +280,18 @@ footer a:hover {
 .featured-project .image-container:hover img {
   transform: scale(1.03);
   filter: grayscale(0);
+}
+
+.cartography-map {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #f6f3ef;
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.featured-project .image-container:hover .cartography-map {
+  transform: scale(1.03);
 }
 
 .featured-project .details {
@@ -733,6 +748,7 @@ footer a:hover {
   .lang-switcher {
     margin-left: 0;
     margin-top: 16px;
+    flex-basis: 100%;
   }
 }
 
